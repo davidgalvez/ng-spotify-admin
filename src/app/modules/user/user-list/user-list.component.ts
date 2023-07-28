@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { UserAddComponent } from '../user-add/user-add.component';
 
 @Component({
   selector: 'app-user-list',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-list.component.scss']
 })
 export class UserListComponent {
-
+  constructor(
+    public modalService: NgbModal,
+  ){}
+  openModalCreateUser(){
+    const modalRef = this.modalService.open(UserAddComponent,{centered:true, size:'md'})
+  }
+  
 }

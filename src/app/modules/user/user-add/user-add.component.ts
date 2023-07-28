@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-add.component.scss']
 })
 export class UserAddComponent {
-
+  name : any = null
+  email : any = null                    
+  password : any = null
 }
