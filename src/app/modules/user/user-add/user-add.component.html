@@ -143,7 +143,7 @@
                 <button type="button" (click)="store()" class="btn btn-primary" data-kt-users-modal-action="submit">
                     <span class="indicator-label">Register</span>
                     <span class="indicator-progress">Please wait...
-                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                    <span class="spinner-border spinner-border-sm align-middle ms-2" *ngIf="isLoading |async" ></span></span>
                 </button>
             </div>
             <!--end::Actions-->
